@@ -1,0 +1,502 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE-edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Voga</title>
+    <!-- stylesheet -->
+    <link rel="stylesheet" type="text/css" href="./css/style.css"/>
+    <!-- icon nav -->
+    <link rel="shortcut icon" href="./images/icon.png"/>
+    <!-- LightSider css-->
+    <!-- JQuery -->
+    <script src="./script/JQuery.js"></script>
+    <link rel="stylesheet" type="text/css" href="./css/lightslider.css">
+    <!-- LightSider js-->
+    <script src="./script/lightslider.js"></script>
+
+    <!-- JQuery -->
+    <script src="https://kit.fontawesome.com/c8e4d183c2.js" crossorigin="anonymous"></script>
+
+</head>
+<body>
+    <!-- Cabeçalho -->
+    <header>
+        <nav>
+            <!-- rede sociais links e numero de telefone -->
+            <div class="social-call">
+                <div class="social">
+                    <a href="#"><i class="fab fa-facebook-f"></i></a>
+                    <a href="#"><i class="fab fa-twitter"></i></a>
+                    <a href="#"><i class="fab fa-linkedin"></i></a>
+                    <a href="#"><i class="fab fa-github"></i></a>
+                </div>
+                <div class="phone">
+                    <span>Call +xxxxxxxxxxxx</span>
+                </div>
+            </div>
+
+            <!-- Menu central -->
+            <div class="navigation">
+                <!-- logo -->
+                <a href="#" class="logo">
+                    <img src="./images/icon.png">
+                    <span>Loja</span>
+                </a>
+                <!-- menu icon -->
+                <div class="toggle"></div>
+
+                <!-- menu -->
+                <ul class="menu">
+                    <li><a href="#">Home</a></li>
+
+                    <li><a href="#">Masculino</a>
+                    <!-- Etiqueta -->
+                        <span class="sale-lable">Vendas</span>
+                    </li>
+                    <li><a href="#">Feminino</a></li>
+                    <li><a href="#">Infantil</a></li>
+                    <li><a href="#">Loja</a></li>
+                </ul>
+                <!-- Menu direito -->
+                <div class="right-menu">
+                    <!-- Pesquisa -->
+                    <a href="javascript:void(0);" class="search">
+                        <i class="fas fa-search"></i>
+                    </a>
+                    <!-- Usuarios -->
+                    <a href="javascript:void(0);" class="user">
+                        <i class="far fa-user"></i>
+                    </a>
+                    <!-- Icone de carta -->
+                    <a href="#"> 
+                        <i class="fas fa-shopping-cart">
+                            <!-- numero do produto na carta -->
+                            <span class="num-cart-product">0</span>
+                        </i>
+                    </a>
+                </div>
+            </div>
+        </nav>
+
+        <!-- Abre a aba de pesquisa -->
+        <div class="search-bar">
+            <div class="search-input">
+                <input type="text" placeholder="Pesquise o produto">
+                <a href="javascript:void(0);" class="search-cancel">
+                    <i class="fas fa-times"></i>
+                </a>
+            </div>
+        </div>
+
+        <!-- formulario de login e cadastro -->
+        <div class="form">
+            <!-- login -->
+            <div class="login-form">
+                <!-- cancel-btn -->
+                <a href="javascript:void(0);" class="form-cancel">
+                    <i class="fas fa-times"></i>
+                </a>
+                <strong>Já sou cliente</strong>
+                <form action="">
+                    <input type="email" placeholder="Exemplo@email.com" name="email" required>
+                    <input type="password" placeholder="Password" name="password" required>
+                    <!-- botão de entrar -->
+                    <input type="submit" value="Continuar">
+                </form>
+                <!-- Esqueceu a senha ou Cadastrar -->
+                <div class="form-btns">
+                    <a href="#" class="forget">Esqueceu sua senha?</a>
+                    <a href="javascript:void(0);" class="sign-up-btn">Crie uma conta</a>
+                </div>
+            </div>
+
+            <!-- Cadastrar -->
+            <div class="sign-up-form">
+                <!-- cancel-btn -->
+                <a href="javascript:void(0);" class="form-cancel">
+                    <i class="fas fa-times"></i>
+                </a>
+                <strong>Cadastrar-se</strong>
+                <form action="">
+                    <input type="text" placeholder="Digite o seu nome" name="name" required>
+                    <input type="text" placeholder="Digite o seu telefone" name="phone" required>
+                    <input type="email" placeholder="Exemplo@email.com" name="email" required>
+                    <input type="password" placeholder="Password" name="password" required>
+                    <!-- botão de entrar -->
+                    <input type="submit" value="Continuar">
+                </form>
+                <!-- Esqueceu a senha ou Cadastrar -->
+                <div class="form-btns">
+                    <a href="javascript:void(0);" class="already-acount">Ja tenho uma conta</a>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <!-- Conteúdo -->
+    <main>
+        <!-- Full slider -->
+        <ul id="adaptive" class="cs-hidden">
+            <!-- box 1 -->
+            <li class="item-a">
+                <!-- box -->
+                <div class="full-slider-box f-slide-1">
+                    <!-- slider text container -->
+                    <div class="slider-text-container">
+                        <div class="f-slider-text">
+                            <span>Oferta limitada</span>
+                            <strong>30% de desconto com <br> <font>código promocional</font></strong>
+                            <a href="#" class="f-slider-btn">Compre agora</a>
+                        </div>
+                    </div>
+                </div>
+            </li>
+
+            <!-- box 2 -->
+            <li class="item-b">
+                <!-- box -->
+                <div class="full-slider-box f-slide-2">
+                    <!-- slider text container -->
+                    <div class="slider-text-container">
+                        <div class="f-slider-text">
+                            <span>Oferta limitada</span>
+                            <strong>30% de desconto com <br> <font>código promocional</font></strong>
+                            <a href="#" class="f-slider-btn">Compre agora</a>
+                        </div>
+                    </div>
+                </div>
+            </li>
+
+            <!-- box 3 -->
+            <li class="item-c">
+                <!-- box -->
+                <div class="full-slider-box f-slide-3">
+                    <!-- slider text container -->
+                    <div class="slider-text-container">
+                        <div class="f-slider-text">
+                            <span>Oferta limitada</span>
+                            <strong>30% de desconto com <br> <font>código promocional</font></strong>
+                            <a href="#" class="f-slider-btn">Compre agora</a>
+                        </div>
+                    </div>
+                </div>
+            </li>
+        </ul>
+
+        <!-- Featured cabeçalho -->
+        <div class="feature-heading">
+            <h2>categorias classificadas</h2>
+        </div>
+
+
+        <ul id="autoWidth" class="container" class="cs-hidden">
+            <li class="item">
+                <!-- Featured box 1 -->
+                <div class="featured-box">
+                    <a href="#">
+                        <img src="./images/feature_1.jpg">
+                    </a>
+                </div>
+                <!-- Text -->
+                <span>Camisetas Femininas</span>
+            </li>
+
+            <li class="item">
+                <!-- Featured box 2 -->
+                <div class="featured-box">
+                    <a href="#">
+                        <img src="./images/feature_2.jpg">
+                    </a>
+                </div>
+                <!-- Text -->
+                <span>Camisetas infatil</span>
+            </li>
+
+            <li class="item">
+                <!-- Featured box 3 -->
+                <div class="featured-box">
+                    <a href="#">
+                        <img src="./images/feature_3.jpg">
+                    </a>
+                </div>
+                <!-- Text -->
+                <span>travesseiros</span>
+            </li>
+
+            <li class="item">
+                <!-- Featured box 4 -->
+                <div class="featured-box">
+                    <a href="#">
+                        <img src="./images/feature_4.jpg">
+                    </a>
+                </div>
+                <!-- Text -->
+                <span>Capa de celular</span>
+            </li>
+
+            <li class="item">
+                <!-- Featured box 5 -->
+                <div class="featured-box">
+                    <a href="#">
+                        <img src="./images/feature_5.jpg">
+                    </a>
+                </div>
+                <!-- Text -->
+                <span>bolsas</span>
+            </li>
+        </ul>
+
+        <!-- New Arrival -->
+        <section class="new-arrival">
+            <div class="arrival-heading">
+                <strong>Roupas</strong>
+                <p>Nossos itens mais vendidos</p>
+            </div>
+
+        <!-- Container de Produtos -->
+            <div class="product-container">
+
+                <!-- Produto 5 -->
+                <div class="product-box">
+                    <!-- imagem -->
+                    <div class="product-img">
+                        <!-- Cart -->
+                        <a href="#" class="add-cart">
+                            <i class="fas fa-shopping-cart"></i>
+                        </a>
+                        <img src="./images/p-5.png">
+                    </div>
+                    <!-- Detalhes -->
+                    <div class="product-details">
+                        <a href="#" class="p-name">Casaco corta vendo</a>
+                        <span class="p-price">R$100.00</span>
+                    </div>
+                </div>
+    
+                <!-- Produto 6 -->
+                <div class="product-box">
+                    <!-- imagem -->
+                    <div class="product-img">
+                        <!-- Cart -->
+                        <a href="" class="add-cart">
+                            <i class="fas fa-shopping-cart"></i>
+                        </a>
+                        <img src="./images/p-6.png">
+                    </div>
+                    <!-- Detalhes -->
+                    <div class="product-details">
+                        <a href="#" class="p-name">jaqueta jeans</a>
+                        <span class="p-price">R$99.00</span>
+                    </div>
+                </div>
+    
+                <!-- Produto 7 -->
+                <div class="product-box">
+                    <!-- imagem -->
+                    <div class="product-img">
+                        <!-- Cart -->
+                        <a href="" class="add-cart">
+                            <i class="fas fa-shopping-cart"></i>
+                        </a>
+                        <img src="./images/p-7.png">
+                    </div>
+                    <!-- Detalhes -->
+                    <div class="product-details">
+                        <a href="#" class="p-name">Casaco esportivo</a>
+                        <span class="p-price">R$75.00</span>
+                    </div>
+                </div>
+    
+                <!-- Produto 8 -->
+                <div class="product-box">
+                    <!-- imagem -->
+                    <div class="product-img">
+                        <!-- Cart -->
+                        <a href="#" class="add-cart">
+                            <i class="fas fa-shopping-cart"></i>
+                        </a>
+                        <img src="./images/p-8.png">
+                    </div>
+                    <!-- Detalhes -->
+                    <div class="product-details">
+                        <a href="#" class="p-name">Sobretudo feminino</a>
+                        <span class="p-price">R$120.00</span>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Venda -->
+        <section class="sale">
+            <!-- sale-box 1 -->
+            <div class="sale-box">
+                <img src="./images/sale-1.jpg" alt="">
+                <a href="#">
+                    <div class="sale-text">
+                        <strong>Bolsa</strong>
+                        <span>Produtos com 25% off</span>
+                    </div>
+                </a>
+            </div>
+
+            <!-- sale-box 2 -->
+            <div class="sale-box">
+                <img src="./images/sale-2.jpg" alt="">
+                <a href="#">
+                    <div class="sale-text">
+                        <strong>Bolsa</strong>
+                        <span>Produtos com 25% off</span>
+                    </div>
+                </a>
+            </div>
+
+            <!-- sale-box 3 -->
+            <div class="sale-box">
+                <img src="./images/sale-3.jpg" alt="">
+                <a href="#">
+                    <div class="sale-text">
+                        <strong>Bolsa</strong>
+                        <span>Produtos com 25% off</span>
+                    </div>
+                </a>
+            </div>
+        </section>
+
+        <!-- New Arrival -->
+        <section class="new-arrival">
+            <div class="arrival-heading">
+                <strong>Novos itens</strong>
+                <p>Estamos te entegrando novos itens</p>
+            </div>
+
+        <!-- Container de Produtos -->
+            <div class="product-container">
+
+                <!-- Produto 1 -->
+                <div class="product-box">
+                    <!-- imagem -->
+                    <div class="product-img">
+                        <!-- Cart -->
+                        <a href="#" class="add-cart">
+                            <i class="fas fa-shopping-cart"></i>
+                        </a>
+                        <img src="./images/p-1.png">
+                    </div>
+                    <!-- Detalhes -->
+                    <div class="product-details">
+                        <a href="#" class="p-name">Camisa branca</a>
+                        <span class="p-price">R$44.00</span>
+                    </div>
+                </div>
+
+                <!-- Produto 2 -->
+                <div class="product-box">
+                    <!-- imagem -->
+                    <div class="product-img">
+                        <!-- Cart -->
+                        <a href="##" class="add-cart">
+                            <i class="fas fa-shopping-cart"></i>
+                        </a>
+                        <img src="./images/p-2.png">
+                    </div>
+                    <!-- Detalhes -->
+                    <div class="product-details">
+                        <a href="#" class="p-name">Camisa social azul</a>
+                        <span class="p-price">R$80.00</span>
+                    </div>
+                </div>
+
+                <!-- Produto 3 -->
+                <div class="product-box">
+                    <!-- imagem -->
+                    <div class="product-img">
+                        <!-- Cart -->
+                        <a href="#" class="add-cart">
+                            <i class="fas fa-shopping-cart"></i>
+                        </a>
+                        <img src="./images/p-3.png">
+                    </div>
+                    <!-- Detalhes -->
+                    <div class="product-details">
+                        <a href="#" class="p-name">Camisa com cordão</a>
+                        <span class="p-price">R$57.00</span>
+                    </div>
+                </div>
+
+                <!-- Produto 4 -->
+                <div class="product-box">
+                    <!-- imagem -->
+                    <div class="product-img">
+                        <!-- Cart -->
+                        <a href="#" class="add-cart">
+                            <i class="fas fa-shopping-cart"></i>
+                        </a>
+                        <img src="./images/p-4.png">
+                    </div>
+                    <!-- Detalhes -->
+                    <div class="product-details">
+                        <a href="#" class="p-name">Capa de iphone</a>
+                        <span class="p-price">R$10.000.00</span>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- banner -->
+        <!-- box -->
+        <div class="banner-box f-slide-3">
+            <!-- slider text container -->
+            <div class="banner-text-container">
+                <div class="banner-text">
+                    <span>Oferta limitada</span>
+                    <strong>30% de desconto com <br> <font>código promocional</font></strong>
+                    <a href="#" class="banner-btn">Compre agora</a>
+                </div>
+            </div>
+        </div>
+
+        <section class="services">
+            <!-- services-box-1 -->
+            <div class="services-box">
+                <i class="fas fa-shipping-fast"></i>
+                <span>Frete grátis</span>
+                <p>Frete grátis em todo o Brasil</p>
+            </div>
+
+            <!-- services-box-2 -->
+            <div class="services-box">
+                <i class="fas fa-headphones-alt"></i>
+                <span>Suporte 24 horas</span>
+                <p>Te damos suporte 24 horas por dia</p>
+            </div>
+
+            <!-- services-box-3 -->
+            <div class="services-box">
+                <i class="fas fa-sync"></i>
+                <span>100% de Garantia</span>
+                <p>Você tem 30 dias de garantia</p>
+            </div>
+        </section>
+
+    </main> 
+
+    <!-- Rodapé -->
+    <footer>
+        <!-- copyright -->
+        <span class="copyright">
+            Copyright - 2023 - BenhurLemes
+        </span>
+        <!-- subscribe -->
+        <div class="subscribe">
+            <form action="">
+                <input type="email" placeholder="Example@gmail.com" required>
+                <input type="submit" value="Enviar!">
+            </form>
+        </div>
+    </footer>
+    <!-- script -->
+    <script src="./script/custom.js"></script>
+</body>
+</html>
